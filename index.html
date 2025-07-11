@@ -7,40 +7,80 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="intro">
+    <h1>Привет! Я Денис</h1>
+    <p>Разработчик, музыкант, креативщик.</p>
+    <a href="#about" class="btn">Узнать больше</a>
+  </div>
+
   <header class="header">
     <h1 class="logo">Денис</h1>
     <nav class="nav">
       <a href="#about">Обо мне</a>
       <a href="#skills">Навыки</a>
+      <a href="#timeline">Опыт</a>
       <a href="#projects">Проекты</a>
+      <a href="#feedback">Отзывы</a>
       <a href="#contact">Контакты</a>
     </nav>
   </header>
 
   <section class="section" id="about">
     <h2>Обо мне</h2>
-    <p>Я — начинающий разработчик и музыкант. Недавно отслужил в армии. Увлекаюсь программированием, создаю сайты, а также пишу музыку. В команде — генератор идей.</p>
+    <p>Меня зовут Денис. Я — креативный разработчик и музыкант. Недавно отслужил в армии, активно развиваюсь в сфере IT и творчества.</p>
   </section>
 
   <section class="section" id="skills">
     <h2>Навыки</h2>
-    <ul>
-      <li>HTML / CSS / JS</li>
-      <li>Git & GitHub</li>
-      <li>UI/UX-дизайн</li>
-      <li>Музыкальное продюсирование</li>
-    </ul>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git & GitHub</span>
+      <span>Музыка</span>
+      <span>UI/UX-дизайн</span>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <h2>Опыт</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="content">
+          <h3>2024 — Служба в армии</h3>
+          <p>Развитие лидерства, ответственности, дисциплины.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="content">
+          <h3>2025 — Обучение в вузе</h3>
+          <p>Начал учёбу в сфере информационных технологий.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="projects">
     <h2>Проекты</h2>
-    <div class="card">
-      <h3>Личный сайт</h3>
-      <p>Резюме-сайт с анимациями, размещён на GitHub Pages.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Сайт-резюме</h3>
+        <p>Мой персональный сайт с анимациями на GitHub Pages.</p>
+      </div>
+      <div class="card">
+        <h3>Музыкальный альбом</h3>
+        <p>Релиз в жанре фонк. Выпущен на платформах VK и Яндекс.Музыка.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Музыкальный релиз</h3>
-      <p>Альбом в жанре фонк, доступен на VK Музыке и Яндекс.Музыке.</p>
+  </section>
+
+  <section class="section" id="feedback">
+    <h2>Отзывы</h2>
+    <div class="testimonial">
+      <p>“Денис — невероятно креативный и дисциплинированный человек. Всегда генерирует свежие идеи.”</p>
+      <span>— Коллега</span>
     </div>
   </section>
 
@@ -51,7 +91,8 @@
   </section>
 
   <footer class="footer">
-    © 2025 Денис. Все права защищены.
+    <p>© 2025 Денис. Все права защищены.</p>
+    <a href="#" class="back-to-top">Наверх ↑</a>
   </footer>
 
   <script src="script.js"></script>
