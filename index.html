@@ -3,68 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Резюме | Денис</title>
+  <title>Резюме – Денис</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 data-aos="fade-down">Денис</h1>
-    <p data-aos="fade-up" data-aos-delay="200">Креативный разработчик и музыкант</p>
+  <header class="header">
+    <h1 class="logo">Денис</h1>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
   </header>
 
-  <section class="about" data-aos="fade-right">
+  <section class="section" id="about">
     <h2>Обо мне</h2>
-    <p>Я только начинаю путь в высшем образовании. Пишу музыку и занимаюсь программированием, что уже приносит мне доход. Недавно отслужил в армии. Уверен в себе, люблю командную работу и генерирую идеи.</p>
+    <p>Я — начинающий разработчик и музыкант. Недавно отслужил в армии. Увлекаюсь программированием, создаю сайты, а также пишу музыку. В команде — генератор идей.</p>
   </section>
 
-  <section class="skills" data-aos="zoom-in">
+  <section class="section" id="skills">
     <h2>Навыки</h2>
     <ul>
-      <li>HTML, CSS, JS</li>
-      <li>Создание сайтов</li>
+      <li>HTML / CSS / JS</li>
+      <li>Git & GitHub</li>
+      <li>UI/UX-дизайн</li>
       <li>Музыкальное продюсирование</li>
-      <li>Работа в команде</li>
     </ul>
   </section>
 
-  <section class="projects" data-aos="fade-up">
+  <section class="section" id="projects">
     <h2>Проекты</h2>
-    <div class="project-card" data-aos="flip-left">
-      <h3>Сайт-портфолио</h3>
-      <p>Личный сайт с музыкой, блогом и разделом проектов.</p>
+    <div class="card">
+      <h3>Личный сайт</h3>
+      <p>Резюме-сайт с анимациями, размещён на GitHub Pages.</p>
     </div>
-    <div class="project-card" data-aos="flip-left" data-aos-delay="150">
-      <h3>Веб-приложение</h3>
-      <p>Мини-сервис для публикации треков онлайн.</p>
+    <div class="card">
+      <h3>Музыкальный релиз</h3>
+      <p>Альбом в жанре фонк, доступен на VK Музыке и Яндекс.Музыке.</p>
     </div>
   </section>
 
-  <section class="contact" data-aos="fade-up">
+  <section class="section" id="contact">
     <h2>Контакты</h2>
-    <p>Email: example@mail.com</p>
-    <p>GitHub: <a href="https://github.com/username">github.com/username</a></p>
+    <p>Email: denis@example.com</p>
+    <p>Telegram: @denis_dev</p>
   </section>
 
-  <footer>
-    <p>© 2025 Денис</p>
+  <footer class="footer">
+    © 2025 Денис. Все права защищены.
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,    // Длительность анимации (в мс)
-    once: true         // Анимация срабатывает один раз
-  });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
