@@ -7,93 +7,95 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="intro">
+  <div class="intro" id="intro">
     <h1>Привет! Я Денис</h1>
-    <p>Разработчик, музыкант, креативщик.</p>
-    <a href="#about" class="btn">Узнать больше</a>
+    <p>Разработчик, музыкант, генератор идей.</p>
+    <a href="#main" class="btn scroll-to-main">Узнать больше</a>
   </div>
 
-  <header class="header">
-    <h1 class="logo">Денис</h1>
-    <nav class="nav">
-      <a href="#about">Обо мне</a>
-      <a href="#skills">Навыки</a>
-      <a href="#timeline">Опыт</a>
-      <a href="#projects">Проекты</a>
-      <a href="#feedback">Отзывы</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-  </header>
+  <main class="main-window" id="main">
+    <header class="header">
+      <h1 class="logo">Денис</h1>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#timeline">Опыт</a>
+        <a href="#projects">Проекты</a>
+        <a href="#feedback">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
 
-  <section class="section" id="about">
-    <h2>Обо мне</h2>
-    <p>Меня зовут Денис. Я — креативный разработчик и музыкант. Недавно отслужил в армии, активно развиваюсь в сфере IT и творчества.</p>
-  </section>
+    <section class="section" id="about">
+      <h2>Обо мне</h2>
+      <p>Я — креативный разработчик и музыкант. Недавно отслужил в армии, развиваюсь в IT и творчестве.</p>
+    </section>
 
-  <section class="section" id="skills">
-    <h2>Навыки</h2>
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Git & GitHub</span>
-      <span>Музыка</span>
-      <span>UI/UX-дизайн</span>
-    </div>
-  </section>
+    <section class="section" id="skills">
+      <h2>Навыки</h2>
+      <div class="tags">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Музыка</span>
+        <span class="skill">UI/UX-дизайн</span>
+      </div>
+    </section>
 
-  <section class="section" id="timeline">
-    <h2>Опыт</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="dot"></div>
-        <div class="content">
-          <h3>2024 — Служба в армии</h3>
-          <p>Развитие лидерства, ответственности, дисциплины.</p>
+    <section class="section" id="timeline">
+      <h2>Опыт</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="content">
+            <h3>2024</h3>
+            <p>Служба в армии: дисциплина, выносливость, командная работа.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="content">
+            <h3>2025</h3>
+            <p>Поступление в вуз: старт пути в IT-сфере, самообразование.</p>
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="dot"></div>
-        <div class="content">
-          <h3>2025 — Обучение в вузе</h3>
-          <p>Начал учёбу в сфере информационных технологий.</p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Проекты</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Сайт-резюме</h3>
+          <p>Анимированный сайт, размещён на GitHub Pages.</p>
+        </div>
+        <div class="card">
+          <h3>Альбом “Фонк”</h3>
+          <p>Музыкальный релиз, доступен на VK и Яндекс Музыке.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="projects">
-    <h2>Проекты</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Сайт-резюме</h3>
-        <p>Мой персональный сайт с анимациями на GitHub Pages.</p>
+    <section class="section" id="feedback">
+      <h2>Отзывы</h2>
+      <div class="testimonial">
+        <p>“Денис — талантливый и инициативный. Делает всё с душой.”</p>
+        <span>— Коллега</span>
       </div>
-      <div class="card">
-        <h3>Музыкальный альбом</h3>
-        <p>Релиз в жанре фонк. Выпущен на платформах VK и Яндекс.Музыка.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="feedback">
-    <h2>Отзывы</h2>
-    <div class="testimonial">
-      <p>“Денис — невероятно креативный и дисциплинированный человек. Всегда генерирует свежие идеи.”</p>
-      <span>— Коллега</span>
-    </div>
-  </section>
+    <section class="section" id="contact">
+      <h2>Контакты</h2>
+      <p>Email: denis@example.com</p>
+      <p>Telegram: @denis_dev</p>
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Контакты</h2>
-    <p>Email: denis@example.com</p>
-    <p>Telegram: @denis_dev</p>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Денис. Все права защищены.</p>
-    <a href="#" class="back-to-top">Наверх ↑</a>
-  </footer>
+    <footer class="footer">
+      <p>© 2025 Денис. Все права защищены.</p>
+      <a href="#" class="back-to-top">Наверх ↑</a>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
