@@ -2,34 +2,193 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Резюме Дениса</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Резюме — Денис</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    /* Сброс стилей */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f7fa;
+      color: #222;
       line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
     }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+      animation: slideUp 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-delay: 0.3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+
     h1 {
+      font-size: 2.8rem;
       text-align: center;
+      margin-bottom: 10px;
+      font-weight: 700;
     }
+
+    h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #0d47a1;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #e3f2fd;
+      color: #0d47a1;
+      display: inline-block;
+      padding: 6px 14px;
+      margin: 6px 8px 6px 0;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    ul li:hover {
+      background-color: #bbdefb;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #06418c;
+      text-decoration: underline;
+    }
+
+    /* Плавная анимация появления блоков по очереди */
+    .fade-block {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideIn 0.6s ease forwards;
+    }
+    .fade-block:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    .fade-block:nth-child(2) {
+      animation-delay: 0.8s;
+    }
+    .fade-block:nth-child(3) {
+      animation-delay: 1.1s;
+    }
+    .fade-block:nth-child(4) {
+      animation-delay: 1.4s;
+    }
+    .fade-block:nth-child(5) {
+      animation-delay: 1.7s;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
   </style>
 </head>
 <body>
-  <h1>Денис Иванов</h1>
-  <p><strong>Junior разработчик</strong></p>
-  <h2>Образование</h2>
-  <p>Поступаю в ВУЗ, факультет программирования</p>
-  <h2>Навыки</h2>
-  <ul>
-    <li>Python, JavaScript</li>
-    <li>HTML, CSS</li>
-    <li>Git, GitHub</li>
-  </ul>
-  <h2>Контакты</h2>
-  <p>Email: denis@example.com</p>
+  <div class="container">
+    <h1>Денис Иванов</h1>
+    <p style="text-align:center; font-weight: 600; color:#555; font-size:1.1rem;">Junior Разработчик &nbsp;|&nbsp; Музыкант &nbsp;|&nbsp; Креативный генератор идей</p>
+
+    <section class="fade-block">
+      <h2>Обо мне</h2>
+      <p>Я поступаю на высшее образование, увлекаюсь программированием и созданием музыки. Люблю решать задачи и создавать новые проекты. Уверенный в себе и ориентирован на результат.</p>
+    </section>
+
+    <section class="fade-block">
+      <h2>Навыки</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML5 & CSS3</li>
+        <li>Git & GitHub</li>
+        <li>Аналитика</li>
+        <li>Создание музыки</li>
+      </ul>
+    </section>
+
+    <section class="fade-block">
+      <h2>Опыт и достижения</h2>
+      <p>Недавно завершил службу в армии, где приобрёл дисциплину и умение работать в команде. В программировании — несколько небольших проектов, которые успешно реализовал самостоятельно.</p>
+      <p>В команде выступаю как генератор идей и активный участник процессов.</p>
+    </section>
+
+    <section class="fade-block">
+      <h2>Образование</h2>
+      <p>Поступаю в университет, направление — информационные технологии и программирование.</p>
+    </section>
+
+    <section class="fade-block">
+      <h2>Контакты</h2>
+      <p class="contact-info">Email: <a href="mailto:denis@example.com">denis@example.com</a></p>
+      <p class="contact-info">Telegram: <a href="https://t.me/denis123" target="_blank">@denis123</a></p>
+      <p class="contact-info">GitHub: <a href="https://github.com/whyneverland" target="_blank">github.com/whyneverland</a></p>
+    </section>
+  </div>
 </body>
 </html>
